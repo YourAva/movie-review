@@ -15,7 +15,12 @@
   margin: 20px;
   font-family: "Lexend Deca", sans-serif;
   overflow: hidden; /* Changed from overflow: hi; */
-  width: 50%
+  width: 50%;
+  transition: 0.2s;
+}
+
+.movie:hover{
+  scale: 105%
 }
 
 .movie-cover {
@@ -30,14 +35,17 @@
 .movie-data {
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Removed duplicate line */
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr); /* Adjusted for 2-column grid */
+  grid-template-rows: auto; /* Changed to auto */
   justify-content: space-evenly;
 }
+
 
 .movie-review {
   display: flex;
   align-items: flex-start;
+  grid-column: 1;
+
 }
 
 .movie-review p {
@@ -45,6 +53,7 @@
   font-weight: 800;
   font-size: 20px;
   margin-top: 20px;
+  
 }
 
 .movie-reviews-tomato {
@@ -56,5 +65,26 @@
 }
 
 .movie-description {
-  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  width: 50%;
+  text-align: center;
+  width: 50%
+}
+
+.rating{
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rating-bar {
+  background-color: rgb(67, 0, 90);
+  width: 100%;
+  height: 10px;
+  display: flex;
+}
+
+.rating-bar-progress{
+  background-color: rgb(120, 35, 160);
 }
