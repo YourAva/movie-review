@@ -1,0 +1,20 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #191125;
+  color: #fff;
+  z-index: 2000;
+  border-color: #160722;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 3px;
+  filter: drop-shadow(0px 10px 20px #b826d226);
+}
+
+.navbar h1 {
+  margin-left: 20px;
+  color: #9556c2;
+  font-weight: 700;
+  font-family: "Lexend Deca", sans-serif;
+}
