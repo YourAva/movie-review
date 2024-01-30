@@ -47,16 +47,17 @@ function App() {
 function Movie(props) {
   return (
     <li className="movie">
-      <img src={props.movieObj.image}></img>
-      <h2>{props.movieObj.title}</h2>
-      <p>{props.movieObj.director}</p>
-      <div className="movie-data">
-        <p className="description">{props.movieObj.description}</p>
-        <ul className="runtime">
-          <li>Runtime: {props.movieObj.runtime}</li>
-          <li>{props.movieObj.genre}</li>
-          <li>{props.movieObj.runtime}</li>
-        </ul>
+      <img src={props.movieObj.image} className="movie-cover"></img>
+      <div className="movie-titles">
+        <h2>{props.movieObj.title}</h2>
+        <p>{props.movieObj.director}</p>
+      </div>
+      <div className="movie-review">
+        <img src="./rottenTomatoes.png" className="movie-reviews-tomato"/>
+        <p>{props.movieObj.reviewAmount}</p>
+      </div>
+      <div className="movie-description">
+        <p>{props.movieObj.description}</p>
       </div>
     </li>
   );
