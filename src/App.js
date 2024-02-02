@@ -23,6 +23,7 @@ function App() {
 
   const movies = movieData;
   const numMovies = movies.length;
+  const currentDate = new Date();
 
   return (
     <div className="App">
@@ -35,6 +36,12 @@ function App() {
           ))}
         </div>
       )}
+      <footer>
+        Time(GMT) --
+        {String(currentDate.getHours()) +
+          ":0" +
+          String(currentDate.getMinutes())}
+      </footer>
     </div>
   );
 }
